@@ -8,6 +8,7 @@ import { EventLog } from '../components/EventLog';
 import { LiveCharts } from '../components/LiveCharts';
 import { BSInfoPanel, UserInfoPanel } from '../components/InfoPanels';
 
+
 interface Props {
   state: SimState;
   controls: SimControls;
