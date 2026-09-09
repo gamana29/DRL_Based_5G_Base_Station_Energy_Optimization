@@ -1,0 +1,10 @@
+{
+  "description": "Simplify project creation with an intuitive platform that streamlines workflows and boosts productivity for professionals and teams.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
