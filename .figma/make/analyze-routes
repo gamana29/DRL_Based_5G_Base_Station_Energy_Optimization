@@ -2,3 +2,5 @@
 set -euo pipefail
 
 exec figma-analyze routes "$@"
+
+
