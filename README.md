@@ -571,5 +571,3 @@ Energy Saving (%) =
 ---
 
 
-* Decision explanations
-
