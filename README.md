@@ -350,13 +350,7 @@ The project follows a complete **Design → Development → Version Control → 
                   🌐 LIVE DEMO
 ```
 
-##  Figma
 
-The interface was designed using **Figma** to plan the visual layout, components, controls, network visualization, and overall user experience before implementation.
-
-
-
----
 
 
 #  Netlify
@@ -576,77 +570,6 @@ Energy Saving (%) =
 
 ---
 
-#  Concepts Demonstrated
 
-This project combines concepts from several areas of engineering and computer science:
-
-### 5G / Wireless Communication
-
-* 5G cellular networks
-* Base station operation
-* User association
-* Network coverage
-* SINR
-* Radio resource utilization
-* Traffic modeling
-
-### Artificial Intelligence
-
-* Reinforcement Learning
-* Deep Reinforcement Learning
-* DQN
-* Reward engineering
-* State/action representation
-* Policy learning
-
-### Software Development
-
-* React
-* REST APIs
-* WebSockets
-* Python
-* Frontend/backend integration
-* Git/GitHub
-* Deployment
-
-### Visualization
-
-* Interactive network maps
-* Animated users
-* Base station state transitions
-* Real-time metrics
 * Decision explanations
 
----
-
-#  Future Improvements
-
-Potential future extensions include:
-
-* PPO-based optimization
-* Multi-agent reinforcement learning
-* Dynamic user mobility models
-* Cell load balancing
-* Handover-aware energy optimization
-* More realistic 5G NR traffic models
-* Beamforming-aware energy optimization
-* Near-field / XL-MIMO extension
-* Multi-objective optimization
-* Carbon-aware network optimization
-* Integration with real 5G network datasets
-* Hardware/software network testbed integration
-
----
-
-#  Simulation Disclaimer
-
-This project is an **educational software simulation** of 5G base station energy optimization.
-
-The network, traffic, energy consumption, coverage, SINR, and DRL behavior are modeled computationally and do not represent measurements from a commercial 5G network.
-
-
-
----
-
-
-If you find this project useful or interesting, consider giving the repository a ⭐ on GitHub.
