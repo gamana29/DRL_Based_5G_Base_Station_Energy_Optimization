@@ -2,7 +2,7 @@
 
 An interactive 5G network simulation platform that demonstrates how **Deep Reinforcement Learning (DRL)** can intelligently manage base stations according to changing network traffic, reducing energy consumption while maintaining network coverage and Quality of Service (QoS).
 
-The project combines **5G wireless networking, reinforcement learning, interactive visualization, UI/UX design, and web development** into a single educational simulator.
+
 
 ---
 
