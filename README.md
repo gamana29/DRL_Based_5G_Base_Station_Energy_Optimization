@@ -56,10 +56,7 @@ The main objectives of this project are:
 * Dynamically adapt base station activity to network traffic.
 * Maintain sufficient user coverage.
 * Maintain acceptable throughput and QoS.
-* Model the problem as a Reinforcement Learning environment.
-* Visualize the DRL decision-making process.
-* Compare DRL-based optimization with a conventional baseline.
-* Provide an educational visualization of 5G energy management.
+
 
 ---
 
@@ -114,7 +111,6 @@ The action determines which base stations should remain active according to the 
 
 The reward function balances energy efficiency and network performance.
 
-A simplified formulation is:
 
 ```text
 Reward =
@@ -136,16 +132,6 @@ The objective is to maximize the long-term cumulative reward.
 
 ---
 
-#  Interactive 5G Network
-
-The simulator represents a simplified 5G cellular network containing:
-
-* Multiple base stations
-* Mobile users
-* Coverage regions
-* Traffic demand
-* Network load
-* Base station operating states
 
 Example:
 
@@ -176,24 +162,14 @@ Each base station can operate in different states.
 
 | State       | Meaning                                                        |
 | ----------- | -------------------------------------------------------------- |
-| 🟢 ACTIVE   | Base station is fully operational                              |
-| ⚫ SLEEP     | Base station is placed into a low-power state                  |
-| 🟡 WAKING   | Base station is transitioning back to active mode              |
-| 🔴 OVERLOAD | Base station is experiencing high traffic/resource utilization |
+| ACTIVE   | Base station is fully operational                              |
+| SLEEP     | Base station is placed into a low-power state                  |
+| WAKING   | Base station is transitioning back to active mode              |
+| OVERLOAD | Base station is experiencing high traffic/resource utilization |
 
-The state transitions are represented visually in the simulator.
 
 ---
 
-#  Interactive Controls
-
-The simulator allows users to experiment with different network conditions.
-
-## Traffic Control
-
-```text
-LOW ───────────────────── HIGH
-```
 
 Increasing traffic causes additional network demand.
 
@@ -231,7 +207,7 @@ Energy Consumption ↓
 
 ---
 
-#  DRL Decision Explanation
+#  DRL Decision 
 
 One of the important goals of this project is to make the DRL process understandable rather than treating the model as a black box.
 
@@ -262,18 +238,17 @@ This allows users to understand the relationship between:
 
 #  Network Metrics
 
-The simulator can monitor:
 
 | Metric               | Description                             |
 | -------------------- | --------------------------------------- |
-| ⚡ Energy Consumption | Total simulated energy usage            |
-| 📶 Throughput        | Data successfully served by the network |
-| 👥 Users             | Number of connected users               |
-| 📡 Active BS         | Number of active base stations          |
-| 📍 Coverage          | Percentage of users adequately covered  |
-| 📈 PRB Utilization   | Radio resource utilization              |
-| 📡 SINR              | Signal-to-interference-plus-noise ratio |
-| 🧠 Reward            | DRL agent's current reward              |
+| Energy Consumption | Total simulated energy usage            |
+| Throughput        | Data successfully served by the network |
+| Users             | Number of connected users               |
+|  Active BS         | Number of active base stations          |
+|  Coverage          | Percentage of users adequately covered  |
+|  PRB Utilization   | Radio resource utilization              |
+|  SINR              | Signal-to-interference-plus-noise ratio |
+|  Reward            | DRL agent's current reward              |
 
 ---
 
@@ -326,57 +301,14 @@ The simulator can monitor:
 
 ---
 
-#  Design & Development Workflow
-
-The project follows a complete **Design → Development → Version Control → Deployment** workflow.
-
-```text
-                    🎨 FIGMA
-                       │
-                       │ UI/UX Design
-                       ↓
-                💻 FRONTEND CODE
-                 React + Vite
-                       │
-                       ↓
-                   🐙 GITHUB
-              Source Code + Git
-                       │
-                       ↓
-                  🚀 NETLIFY
-                   Deployment
-                       │
-                       ↓
-                  🌐 LIVE DEMO
-```
-
-
 
 
 #  Netlify
-
-The interactive frontend is deployed using **Netlify**, allowing the project to be accessed through a live web application.
 
 **Live Demo:**
 [Open Live Website](https://drlbased5gbasestationenergyopti.netlify.app/)
 
 ---
-
-#  Technology Stack
-
-## Design
-
-* Figma
-
-##  Frontend
-
-* React
-* Vite
-* JavaScript
-* Tailwind CSS
-* SVG
-* CSS Animations
-* Framer Motion
 
 ##  Machine Learning / DRL
 
@@ -387,10 +319,6 @@ The interactive frontend is deployed using **Netlify**, allowing the project to 
 * Deep Q-Network (DQN)
 * Reinforcement Learning
 
-## 🔗 Backend
-
-* FastAPI
-* WebSocket
 
 ##  Version Control
 
@@ -445,9 +373,8 @@ The interactive frontend is deployed using **Netlify**, allowing the project to 
 
 ---
 
-#  Development Methodology
+#  Methodology
 
-The project is developed progressively to ensure that the underlying 5G concepts are understood before introducing the DRL model.
 
 ## Phase 1 — Network Visualization
 
@@ -530,26 +457,6 @@ Reward
       ↓
 Learning
 ```
-
----
-
-## Phase 6 — Interactive Integration
-
-The trained DRL model is connected to the visual simulator.
-
-```text
-React Frontend
-      ↕
-WebSocket / API
-      ↕
-Python Backend
-      ↕
-DRL Model
-      ↕
-5G Network Environment
-```
-
-The frontend visualizes the decisions generated by the backend.
 
 ---
 
